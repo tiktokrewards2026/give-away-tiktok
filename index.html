@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok Official Giveaway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f5f5f5;
+      text-align: center;
+    }
+
+    .topbar {
+      background: #000;
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .box {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #ff0050;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    TikTok Official Giveaway Center
+  </div>
+
+  <div class="box" id="content">
+    <h2>Verifying winner...</h2>
+    <p>Please wait while we confirm your reward</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("content").innerHTML = `
+        <h1>🎉 SELAMAT KAMU KENA PRANK 🤡</h1>
+        <p>Hadiah kamu: meme spesial dari temen kamu 😭</p>
+
+        <img src="https://i.imgflip.com/1ur9b0.jpg">
+
+        <button class="btn" onclick="alert('LOL 🤡 next time hati-hati ya')">
+          Claim Reward
+        </button>
+      `;
+    }, 3000);
+  </script>
+
+</body>
+</html>
